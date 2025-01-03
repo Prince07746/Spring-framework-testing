@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71c0433-7473-4c43-b46e-d2ebd1388e71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/BeanOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/BeanTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/config/myAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/repository/MyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyApp/MyAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/MyApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/repository/MyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/repository/MyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +52,7 @@
     "JUnit.MyAppTest.executor": "Run",
     "JUnit.MyAppTest.testBeans.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.Spring-framework-pm [clean,install...].executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -75,7 +64,7 @@
       <recent name="MyApp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyAppTest (1)">
+  <component name="RunManager" selected="Application.MyApp">
     <configuration name="MyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyApp.MyApp" />
       <module name="Spring-framework-pm" />
@@ -136,9 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyApp" />
         <item itemvalue="JUnit.MyAppTest (1)" />
         <item itemvalue="JUnit.MyAppTest" />
-        <item itemvalue="Application.MyApp" />
         <item itemvalue="JUnit.MyAppTest.testBeans" />
       </list>
     </recent_temporary>

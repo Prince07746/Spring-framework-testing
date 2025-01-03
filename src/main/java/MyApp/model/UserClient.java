@@ -6,7 +6,7 @@ import java.util.Objects;
 
 
 @Entity
-public class User {
+public class UserClient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,20 +16,20 @@ public class User {
     private int age;
 
 
-    public User(int id, String name, String lastName, int age) {
+    public UserClient(int id, String name, String lastName, int age) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.age = age;
     }
 
-    public User(String name, String lastName, int age) {
+    public UserClient(String name, String lastName, int age) {
         this.name = name;
         this.lastName = lastName;
         this.age = age;
     }
 
-    public User() {
+    public UserClient() {
     }
 
     public int getId() {
@@ -68,8 +68,8 @@ public class User {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id && age == user.age && Objects.equals(name, user.name) && Objects.equals(lastName, user.lastName);
+        UserClient userClient = (UserClient) o;
+        return id == userClient.id && age == userClient.age && Objects.equals(name, userClient.name) && Objects.equals(lastName, userClient.lastName);
     }
 
     @Override

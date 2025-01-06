@@ -76,4 +76,14 @@ public class UserClient {
     public int hashCode() {
         return Objects.hash(id, name, lastName, age);
     }
+
+    @Override
+    public String toString() {
+        return "UserClient{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

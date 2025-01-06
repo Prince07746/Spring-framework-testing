@@ -2,11 +2,23 @@ package MyApp.controller;
 
 
 import MyApp.model.UserClient;
+import MyApp.model.UserClientBank;
 import MyApp.service.MyService;
+
+// you can access the all request with this
 import jakarta.servlet.http.HttpServletRequest;
+
+// all about spring boot , mvc , where autowired for dependency injection
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+
+// log info about the app
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.List;
 
@@ -15,11 +27,20 @@ import java.util.List;
 public class MyController {
 
     private final MyService myService;
+    private final RestTemplate restTemplate;
+    private static final Logger logger = LoggerFactory.getLogger(MyController.class);
+
+    @Value("${bank.service.url}")
+    private String bankUrl;
+
 
     @Autowired
-    public MyController(MyService myService){
+    public MyController(MyService myService,RestTemplate restTemplate){
         this.myService = myService;
+        this.restTemplate = restTemplate;
     }
+
+
 
    @GetMapping
    public List<UserClient> getUsers(){
@@ -62,6 +83,25 @@ public class MyController {
       return userClient.getId() >= 0 ?
               ResponseEntity.ok().header("User-Deleted","ok").body(userClient)
               : ResponseEntity.ok().header("User-Deleted","fail").body(new UserClient());
+
+   }
+
+
+   @GetMapping("/{id}/bank")
+    public ResponseEntity<String> getUserDetailsBank(@PathVariable("id") int userId){
+
+
+        try {
+
+            String url = bankUrl.replace("{id}",String.valueOf(userId));
+
+            UserClientBank userClientBank = restTemplate.getForObject(url, UserClientBank.class);
+            return ResponseEntity.ok(userClientBank != null ? userClientBank.toString() : "No user bank details found");
+
+        } catch (Exception e){
+            logger.error("Error fetching bank details for user ID: {}", userId, e);
+            return ResponseEntity.status(500).body("Error fetching bank details");
+        }
 
    }
 

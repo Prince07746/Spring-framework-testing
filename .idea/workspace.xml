@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71c0433-7473-4c43-b46e-d2ebd1388e71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/TransactionUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClientBank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/testdb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/config/myAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/config/myAppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -7,12 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class MyService {
 
 
-    private MyRepository myRepository;
+    private final MyRepository myRepository;
 
     @Autowired
     public MyService(MyRepository myRepository) {
@@ -21,14 +22,38 @@ public class MyService {
 
 
     public List<UserClient> findAll(){
-        List<UserClient> list = myRepository.findAll();
-        list.add(new UserClient("prince","matongo",22));
-        list.add(new UserClient("david","kitoko",25));
-        list.add(new UserClient("isaac","mour",31));
-        return list;
+        return myRepository.findAll();
     }
 
-    public void addUser(){
-        myRepository.save(new UserClient("alain","matongo",38));
+    public void addUser(UserClient user){
+        myRepository.save(user);
     }
+
+    public UserClient findUserById(int id){
+        return findAll().stream().
+                filter(userList ->  userList.getId() == id).
+                findFirst().
+                orElse(null);
+    }
+
+    public UserClient findUserByName(String name){
+        return findAll().stream().
+                filter(userList -> userList.getName().equals(name)).
+                findFirst().orElse(null);
+    }
+    public UserClient findUserByLastName(String lastName){
+        return findAll().stream().
+                filter(userList -> userList.getLastName().equals(lastName)).
+                findFirst().orElse(null);
+    }
+
+    public void deleteAll(){
+        myRepository.deleteAll();
+    }
+
+    public void deleteById(int id){
+        myRepository.deleteById(id);
+    }
+
+
 }

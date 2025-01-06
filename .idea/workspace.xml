@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d71c0433-7473-4c43-b46e-d2ebd1388e71" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/MyApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/repository/MyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/repository/MyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/service/MyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MyApp.executor": "Run",
-    "JUnit.MyAppTest.executor": "Run",
-    "JUnit.MyAppTest.testBeans.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.Spring-framework-pm [clean,install...].executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MyApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyAppTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyAppTest.testBeans.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Spring-framework-pm [clean,install...].executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ATOM/MATONGO READY FOR IT/accenture/learning Java/java/java pynsilavnia university&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="MyApp" />

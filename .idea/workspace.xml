@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71c0433-7473-4c43-b46e-d2ebd1388e71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/TransactionUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClientBank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/testdb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/testdb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/config/myAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/config/myAppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/model/UserClientBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/DTO/UserClientBank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +53,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ATOM/MATONGO READY FOR IT/accenture/learning Java/java/java pynsilavnia university&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/ATOM/MATONGO READY FOR IT/IT DEVELOPS/SPRING-APP-2&quot;
   }
 }</component>
   <component name="RecentsManager">

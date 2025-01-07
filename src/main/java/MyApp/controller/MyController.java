@@ -2,11 +2,10 @@ package MyApp.controller;
 
 
 import MyApp.model.UserClient;
-import MyApp.model.UserClientBank;
+import MyApp.DTO.UserClientBank;
 import MyApp.service.MyService;
 
 // you can access the all request with this
-import jakarta.servlet.http.HttpServletRequest;
 
 // all about spring boot , mvc , where autowired for dependency injection
 import org.springframework.beans.factory.annotation.Autowired;
@@ -88,7 +87,7 @@ public class MyController {
 
 
    @GetMapping("/{id}/bank")
-    public ResponseEntity<String> getUserDetailsBank(@PathVariable("id") int userId){
+    public ResponseEntity<UserClientBank> getUserDetailsBank(@PathVariable("id") int userId){
 
 
         try {
@@ -96,11 +95,11 @@ public class MyController {
             String url = bankUrl.replace("{id}",String.valueOf(userId));
 
             UserClientBank userClientBank = restTemplate.getForObject(url, UserClientBank.class);
-            return ResponseEntity.ok(userClientBank != null ? userClientBank.toString() : "No user bank details found");
+            return ResponseEntity.ok(userClientBank);
 
         } catch (Exception e){
             logger.error("Error fetching bank details for user ID: {}", userId, e);
-            return ResponseEntity.status(500).body("Error fetching bank details");
+            return ResponseEntity.status(500).body(null);
         }
 
    }

@@ -46,6 +46,7 @@ public class MyController {
         return myService.findAll();
    }
 
+
    @GetMapping("/{id}")
     public UserClient getUserById(@PathVariable("id") int userId){
         return myService.findUserById(userId);

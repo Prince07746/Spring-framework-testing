@@ -10,7 +10,7 @@ import MyApp.service.MyService;
 // all about spring boot , mvc , where autowired for dependency injection
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -94,8 +94,18 @@ public class MyController {
 
             String url = bankUrl.replace("{id}",String.valueOf(userId));
 
-            UserClientBank userClientBank = restTemplate.getForObject(url, UserClientBank.class);
-            return ResponseEntity.ok(userClientBank);
+            // setting Media type for content negotiation
+            HttpHeaders header = new HttpHeaders();
+            header.setAccept(List.of(MediaType.APPLICATION_JSON));
+            HttpEntity<String>  reqEntity = new HttpEntity<>(header);
+            // -----------------------------------------------
+
+            // Use exchange() to send the GET request
+            ResponseEntity<UserClientBank> userClientBank = restTemplate.exchange(url, HttpMethod.GET,reqEntity,
+                    UserClientBank.class);
+
+            // Return the response body with HTTP 200 status
+            return ResponseEntity.ok(userClientBank.getBody());
 
         } catch (Exception e){
             logger.error("Error fetching bank details for user ID: {}", userId, e);

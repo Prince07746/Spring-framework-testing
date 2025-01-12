@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71c0433-7473-4c43-b46e-d2ebd1388e71" name="Changes" comment="" />
+    <list default="true" id="d71c0433-7473-4c43-b46e-d2ebd1388e71" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyApp/controller/MyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +53,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ATOM/MATONGO READY FOR IT/IT DEVELOPS/SPRING-APP-2&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/ATOM/MATONGO READY FOR IT/accenture/learning Java/Project/ACCENTURE-JAVA-EXERCICE&quot;
   }
 }</component>
   <component name="RecentsManager">
